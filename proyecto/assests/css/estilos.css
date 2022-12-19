@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+
+}
+
+.logo{
+    text-align: center;
+    
+    
+}
+
+/*Textos y titulos*/
+
+.titulo_home{
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+    color: black;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 100px;
+    text-align: center;
+
+}
+
+
+h4{
+    font-family: 'Unbounded', cursive;
+    font-size: 30px;
+    text-align: center;
+    position: relative ;
+}
+
+h5{
+    font-family: 'Unbounded', cursive;
+    font-size: 80px;
+    text-align: left;
+    
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+/*Imagen*/
+
+.img_nav{
+    width: 100%;
+}
+
+#img_carusel{
+    width: 100%;
+    
+}
+
+/*cards*/
+
+
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    
+    
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido h5{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: all 400ms ease;
+
+}
+
+.card .contenido a:hover{
+    background-color: black;
+    color: white;
+}
+
+/*recomendacion*/
+
+.recomendacion{
+    text-align: center;
+    margin: 40px;
+    margin-top: 30px;
+}
+
+.recomendacion img{
+    margin: 50px;
+    color: black;
+}
+
+.recomendacion h1{
+    font-family: 'Unbounded', cursive;
+    color: black;
+    font-size: 40px;
+}
+
+.recomendacion h6{
+    color: #868686;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+.recomendacion h2{
+    font-family: 'Unbounded', cursive;
+    color: black;
+    font-size: 28px;
+}
+
+.recomendacion p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.recomendacion a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.recomendacion a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*Navegador*/
+
+
+
+#nav{
+    font-family: 'Unbounded', cursive;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.20);
+
+}
+
+#nav:hover{
+    color: cornflowerblue;
+}
+
+/*Carrusel*/
+
+
+.tex_carru{
+    text-shadow: 25px;
+    font-family: 'Unbounded', cursive;
+    font-size: 60px;
+    text-align: left;
+    text-shadow: 2px 2px 2px rgb(77, 75, 75);
+
+}
+
+.p_carru{
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgb(77, 75, 75);
+
+}
+.carousel-inner{
+    
+    text-align: left; 
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.50);
+    
+}
+
+.carousel button{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+/*Pie de pagina*/
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 80%;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    font-family: 'Unbounded', cursive;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .box p:hover{
+    color: cornflowerblue;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: rgba(73, 73, 73, 0.2);
+    text-align: center;
+    border-radius: 50px;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+
+}
+
+.pie-pagina .grupo-2{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Unbounded', cursive;
+    font-size: 17px;
+}
+
+
+/*PAGINA NORTE*/
+
+
+.letra-norte{
+    margin: 10px;
+    text-align: left;
+    position: sticky;
+}
+
+.body_norte{
+    
+    opacity: 90%;
+    background-color: #efefef;
+}
+
+.norte1{
+    background-color: black;
+}
+
+.norte1 h1{
+    font-family: 'Unbounded', cursive;
+    color: white;
+    padding: 20px;
+    font-size: 50px;
+    text-align: left;
+    text-shadow: 2px 2px 2px rgb(77, 75, 75);
+}
+
+.norte1 p{
+    color: #efefef;
+    padding: 20px;
+    text-align: justify;
+}
+
+.fondo{
+    background-color: white;
+    box-shadow: 0px 10px 25px rgba(56, 55, 55, 0.5);
+    
+}
+
+.fondo h1{
+    font-family: 'Unbounded', cursive;
+    color: rgb(44, 44, 44);
+    font-size: 30px;
+}
+
+/*lista*/
+
+
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 380px);
+    grid-auto-rows: 590px;
+    grid-gap: 10px;
+    align-items:flex-end;
+    
+    justify-content:space-around;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    position:relative;
+    margin: 10px;
+    
+    
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    
+    
+    
+    
+
+}
+
+.collection img{
+    width: 100%;
+}
+
+.collection h4{
+    text-align: center;
+    
+    font-size: 45px;
+    font-family: 'Unbounded', cursive;
+    
+}
+
+
+
+
+.collection h5{
+    text-align:start;
+    inline-size: 1.5;
+    font-size: 20px;
+    font-family: 'Unbounded', cursive;
+    
+
+}
+
+.collection container{
+   
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/*PAGINA EXTRA*/
+
+
+
+.extra{
+    text-decoration: none;
+    text-align: center;
+    
+    
+    
+}
+
+.extra h6{
+    color: #868686;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.extra h1{
+    font-family: 'Unbounded', cursive;
+    color: black;
+    font-size: 28px;
+}
+
+.recomendacion h2{
+    font-family: 'Unbounded', cursive;
+    color: black;
+    font-size: 28px;
+}
+
+.recomendacion p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+
+#asidetitle{
+
+
+    color: white;
+    font-family: sans-serif;
+    font-size:20px; 
+
+}
+
+
+.aside{
+
+
+    float:left;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    width: 230px;
+    height: 700px;
+    text-decoration: none;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.20);
+
+    
+
+}
+
+.aside h1{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Unbounded', cursive;
+    text-align: justify;
+}
+
+.aside p{
+    margin-left: 10px;
+    text-align: justify;
+}
+
+
+
+.aside a{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Unbounded', cursive;
+    text-align: justify;
+}
+
+.aside a:hover{
+    color: #868686;
+}
+
+
+/*NOSOTROS*/
+
+.nosotros{
+    text-align: center;
+    margin: 20px;
+    margin-top: 30px;
+   
+    
+}
+
+.nosotros h1{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Unbounded', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+.nosotros p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.imagenes{
+    text-align: center;
+    line-height: 2.5;
+    margin-top: 10px;
+}
+
+.imagenes h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    color: #6a6a6a;
+    padding: 20px;
+}
+
+section h1{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Unbounded', cursive;
+    text-align: center;
+    font-size: 40px;
+}
+
